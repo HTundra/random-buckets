@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Letter For You</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+        font-family: 'Georgia', serif;
+        overflow: hidden;
+    }
+
+    .letter {
+        background: #fffafc;
+        width: 90%;
+        max-width: 600px;
+        padding: 50px 40px;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        animation: float 4s ease-in-out infinite, fadeIn 1.5s ease forwards;
+        opacity: 0;
+    }
+
+    h1 {
+        text-align: center;
+        color: #d6336c;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1.15rem;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    .signature {
+        margin-top: 40px;
+        text-align: right;
+        font-style: italic;
+        color: #d6336c;
+        font-size: 1.2rem;
+    }
+
+    .date-highlight {
+        font-weight: bold;
+        color: #e03131;
+    }
+
+    @keyframes float {
+        0%,100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+        to { opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="letter">
+    <h1>My loblob,</h1>
+
+    <p>
+        i am hereby inviting u to a sick-ass date on <span class="date-highlight">February 15</span>.
+    </p>
+
+    <p>
+        a day for u and me!! no worrying about anything. just us having fun
+    </p>
+
+    <p>
+        sadly, bintana is closed on sundays so let's go to j-mall to pick out matching gachapons, walk around in KKV, then have dinner at Yoshuken! 
+    </p>
+
+    <div class="signature">
+        Yours,<br>
+        Kent ❤️
+    </div>
+</div>
+
+</body>
+</html>
